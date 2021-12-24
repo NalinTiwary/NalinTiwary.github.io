@@ -122,6 +122,15 @@ section {
     background: url("images/background.jpeg") center;
 }
 
+.about .about-content,
+.education .education-content,
+.skills .skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
 section .title {
     position: relative;
     text-align: center;
@@ -160,14 +169,6 @@ section .title::after {
 
 .about .title::after {
     content: "Who I Am";
-}
-
-.about .about-content,
-.education .education-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .about .about-content .left {
@@ -227,6 +228,7 @@ section .title::after {
 /* Education Styling */
 
 .education .education-content .card {
+    height: 350px;
     width: calc(33% - 20px);
     background: #0C0032;
     text-align: center;
@@ -234,6 +236,7 @@ section .title::after {
     padding: 20px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-bottom: 20px;
 }
 
 .education .education-content .card:hover {
@@ -280,6 +283,72 @@ section .title::after {
 
 
 /* Skills section styling */
+
+.skills .skills-content .column {
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left p {
+    color: #240090;
+    text-align: justify;
+}
+
+.skills .skills-content .right .bars {
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #3500D3;
+    margin-bottom: 5px;
+}
+
+.skills .skills-content .right span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skills-content .right .line {
+    height: 5px;
+    width: 100%;
+    background: #282828;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #0054d3;
+}
+
+.skills .skills-content .right .java::before {
+    width: 95%;
+}
+
+.skills .skills-content .right .python::before {
+    width: 80%;
+}
+
+.skills .skills-content .right .cpp::before {
+    width: 72%;
+}
+
+.skills .skills-content .right .js::before {
+    width: 68%;
+}
+
+.skills .skills-content .right .html::before {
+    width: 65%;
+}
+
+.skills .skills-content .right .r::before {
+    width: 50%;
+}
 
 
 /* Responsive Media Query */
@@ -359,6 +428,9 @@ section .title::after {
     .about .about-content .right {
         flex: 100%;
     }
+    .education .education-content .card {
+        height: 280px;
+    }
     .education .education-content .card .box .text {
         font-size: 20px;
     }
@@ -382,6 +454,11 @@ section .title::after {
     }
     .education .education-content .card {
         width: 100%;
+        height: 180px;
+    }
+    .skills .skills-content .column {
+        width: 100%;
+        margin-bottom: 50px;
     }
 }
 
