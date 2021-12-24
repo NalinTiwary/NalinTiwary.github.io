@@ -256,14 +256,6 @@ section .title::after {
     color: whitesmoke;
 }
 
-.education .education-content .card .box {
-    transition: all 0.3s ease;
-}
-
-.education .education-content .card:hover .box {
-    transform: scale(1.05);
-}
-
 .education .education-content .card .box .text {
     color: #0054d3;
     font-size: 25px;
@@ -331,23 +323,109 @@ section .title::after {
 }
 
 .skills .skills-content .right .python::before {
-    width: 80%;
+    width: 90%;
 }
 
 .skills .skills-content .right .cpp::before {
-    width: 72%;
-}
-
-.skills .skills-content .right .js::before {
-    width: 68%;
+    width: 87%;
 }
 
 .skills .skills-content .right .html::before {
-    width: 65%;
+    width: 70%;
 }
 
 .skills .skills-content .right .r::before {
-    width: 50%;
+    width: 62%;
+}
+
+.skills .skills-content .right .js::before {
+    width: 60%;
+}
+
+
+/* Project section styling */
+
+.projects .carousel .card {
+    background: #0C0032;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.projects .carousel .card:hover {
+    background: #3500D3;
+}
+
+.projects .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #0054d3;
+    transition: all 0.3s ease;
+}
+
+.projects .carousel .card:hover img {
+    border-color: whitesmoke;
+}
+
+.projects .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.projects .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.projects .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color: #0054d3;
+}
+
+.projects .carousel .card:hover .text {
+    color: whitesmoke;
+}
+
+.projects .carousel .card p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #3500D3;
+}
+
+.projects .carousel .card:hover p {
+    color: whitesmoke;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid #0054d3!important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: #0054d3!important;
 }
 
 
