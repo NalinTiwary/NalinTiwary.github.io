@@ -302,11 +302,16 @@ section .title::after {
     font-size: 18px;
 }
 
+.skills .skills-content .right .bars:hover {
+    transform: scale(1.05);
+}
+
 .skills .skills-content .right .line {
     height: 5px;
     width: 100%;
     background: #282828;
     position: relative;
+    margin-bottom: 5px;
 }
 
 .skills .skills-content .right .line::before {
