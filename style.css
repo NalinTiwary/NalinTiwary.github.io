@@ -145,6 +145,11 @@ section .title {
     padding-bottom: 20px;
     color: #240090;
     font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+
+section .title:hover {
+    color: whitesmoke;
 }
 
 section .title::before {
@@ -516,6 +521,38 @@ section .title::after {
 
 .profiles .title::after {
     content: "Contact Me";
+}
+
+.profiles .profiles-content .card {
+    display: inline-block;
+    height: 50px;
+    width: calc(33% - 2px);
+    text-align: center;
+    padding-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.profiles .profiles-content .card:hover {
+    transform: scale(1.05);
+}
+
+.profiles .profiles-content .card .fa {
+    font-size: 40px;
+    color: #0054d3;
+}
+
+.profiles .profiles-content .card:hover .fa {
+    color: whitesmoke;
+}
+
+.profiles .profiles-content .card span {
+    font-size: 15px;
+    font-weight: 500;
+    color: #0054d3;
+}
+
+.profiles .profiles-content .card:hover span {
+    color: whitesmoke;
 }
 
 
