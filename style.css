@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .max-width {
     max-width: 1300px;
     padding: 0 80px;
@@ -47,6 +51,7 @@
 }
 
 .navbar .menu li a {
+    display: block;
     color: #240090;
     font-size: 18px;
     font-weight: 500;
@@ -244,8 +249,17 @@ section .title::after {
     background: #3500D3;
 }
 
-.education .education-content .card:hover .box i {
-    color: whitesmoke;
+.education .education-content .card img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #0054d3;
+    transition: all 0.3s ease;
+}
+
+.education .education-content .card:hover img {
+    border: 1px solid whitesmoke;
 }
 
 .education .education-content .card:hover .box .text {
@@ -348,6 +362,34 @@ section .title::after {
 }
 
 
+/* Carousel styling */
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid #0054d3!important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: #0054d3!important;
+}
+
+
 /* Project section styling */
 
 .projects .carousel .card {
@@ -408,29 +450,82 @@ section .title::after {
     color: whitesmoke;
 }
 
-.owl-dots {
-    text-align: center;
-    margin-top: 20px;
-}
 
-.owl-dot {
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid #0054d3!important;
+/* Competitive Programming section styling */
+
+.cp .carousel .card {
+    background: #0C0032;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
     transition: all 0.3s ease;
 }
 
-.owl-dot.active {
-    width: 35px;
-    border-radius: 14px;
+.cp .carousel .card:hover {
+    background: #3500D3;
 }
 
-.owl-dot.active,
-.owl-dot:hover {
-    background: #0054d3!important;
+.cp .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #0054d3;
+    transition: all 0.3s ease;
+}
+
+.cp .carousel .card:hover img {
+    border-color: whitesmoke;
+}
+
+.cp .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.cp .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.cp .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color: #0054d3;
+}
+
+.cp .carousel .card:hover .text {
+    color: whitesmoke;
+}
+
+.cp .carousel .card p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #3500D3;
+}
+
+.cp .carousel .card:hover p {
+    color: whitesmoke;
+}
+
+
+/* Profiles section styling */
+
+.profiles .title::after {
+    content: "Contact Me";
+}
+
+
+/* Footer styling */
+
+footer {
+    background: url("images/background.jpeg") center;
+    padding: 20px 23px;
+    font-family: 'Poppins', sans-serif;
+    color: #3500D3;
 }
 
 

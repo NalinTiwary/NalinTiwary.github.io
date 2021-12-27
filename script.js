@@ -15,6 +15,14 @@ $(document).ready(function() {
         $('.menu-btn i').toggleClass("active");
     });
 
+    // Typing animation script
+    var typed = new Typed(".typed", {
+        strings: ["Developer", "Guitarist", "Chess Player", "Student"],
+        typeSpeed: 50,
+        backSpeed: 60,
+        loop: true
+    });
+
     //Owl-carousel script
     $('.carousel').owlCarousel({
         margin: 20,
