@@ -666,6 +666,9 @@ footer {
         width: 100%;
         margin-bottom: 50px;
     }
+    .projects .carousel .card {
+        height: 250px;
+    }
 }
 
 @media(max-width: 550px) {
@@ -674,8 +677,5 @@ footer {
     }
     .home .home-content .text-3 {
         font-size: 27px;
-    }
-    .projects .carousel .card {
-        height: 200px;
     }
 }
