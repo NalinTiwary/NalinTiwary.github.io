@@ -447,7 +447,7 @@ section .title::after:hover {
 /* Competitive Programming section styling */
 
 .cp .carousel .card {
-    height: 250px;
+    height: 20px;
     background: #0C0032;
     border-radius: 6px;
     padding: 25px 35px;
