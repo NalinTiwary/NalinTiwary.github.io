@@ -60,7 +60,7 @@ html {
 }
 
 .navbar .menu li a:hover {
-    color: #0054d3;
+    color: whitesmoke;
 }
 
 
@@ -74,7 +74,7 @@ html {
 }
 
 .menu-btn:hover {
-    color: #0054d3;
+    color: whitesmoke;
 }
 
 
@@ -174,6 +174,10 @@ section .title::after {
     transform: translateX(-50%);
 }
 
+section .title::after:hover {
+    color: whitesmoke;
+}
+
 
 /* About Section Styling */
 
@@ -256,15 +260,9 @@ section .title::after {
 
 .education .education-content .card img {
     height: 50px;
-    width: 50px;
+    width: 50x;
     object-fit: cover;
-    border-radius: 50%;
-    border: 1px solid #0054d3;
     transition: all 0.3s ease;
-}
-
-.education .education-content .card:hover img {
-    border: 1px solid whitesmoke;
 }
 
 .education .education-content .card:hover .box .text {
@@ -300,6 +298,8 @@ section .title::after {
 }
 
 .skills .skills-content .left p {
+    font-size: 18px;
+    font-weight: 500;
     color: #240090;
     text-align: justify;
 }
@@ -355,7 +355,7 @@ section .title::after {
 }
 
 .skills .skills-content .right .html::before {
-    width: 70%;
+    width: 77%;
 }
 
 .skills .skills-content .right .r::before {
@@ -398,6 +398,7 @@ section .title::after {
 /* Project section styling */
 
 .projects .carousel .card {
+    height: 275px;
     background: #0C0032;
     border-radius: 6px;
     padding: 25px 35px;
@@ -407,19 +408,6 @@ section .title::after {
 
 .projects .carousel .card:hover {
     background: #3500D3;
-}
-
-.projects .carousel .card img {
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #0054d3;
-    transition: all 0.3s ease;
-}
-
-.projects .carousel .card:hover img {
-    border-color: whitesmoke;
 }
 
 .projects .carousel .card .box {
@@ -459,6 +447,7 @@ section .title::after {
 /* Competitive Programming section styling */
 
 .cp .carousel .card {
+    height: 250px;
     background: #0C0032;
     border-radius: 6px;
     padding: 25px 35px;
@@ -470,17 +459,16 @@ section .title::after {
     background: #3500D3;
 }
 
-.cp .carousel .card img {
-    height: 150px;
-    width: 150px;
+.cp .carousel .card .position {
+    font-size: 35px;
+    font-weight: 700;
     object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #0054d3;
+    color: #0054d3;
     transition: all 0.3s ease;
 }
 
-.cp .carousel .card:hover img {
-    border-color: whitesmoke;
+.cp .carousel .card:hover .position {
+    color: whitesmoke;
 }
 
 .cp .carousel .card .box {
@@ -526,14 +514,14 @@ section .title::after {
 .profiles .profiles-content .card {
     display: inline-block;
     height: 50px;
-    width: calc(33% - 2px);
+    width: calc(24% - 1px);
     text-align: center;
     padding-top: 20px;
     transition: all 0.3s ease;
 }
 
 .profiles .profiles-content .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.15);
 }
 
 .profiles .profiles-content .card .fa {
@@ -578,6 +566,9 @@ footer {
     .about .about-content .left img {
         height: 525px;
         width: 350px;
+    }
+    .education .education-content .card {
+        height: 400px;
     }
 }
 
@@ -644,7 +635,7 @@ footer {
         flex: 100%;
     }
     .education .education-content .card {
-        height: 280px;
+        height: 350px;
     }
     .education .education-content .card .box .text {
         font-size: 20px;
@@ -669,7 +660,7 @@ footer {
     }
     .education .education-content .card {
         width: 100%;
-        height: 180px;
+        height: 250px;
     }
     .skills .skills-content .column {
         width: 100%;
@@ -683,5 +674,8 @@ footer {
     }
     .home .home-content .text-3 {
         font-size: 27px;
+    }
+    .projects .carousel .card {
+        height: 200px;
     }
 }
