@@ -161,6 +161,11 @@ section .title::before {
     height: 3px;
     background: #0054d3;
     transform: translateX(-50%);
+    transition: all 0.3s ease;
+}
+
+section .title:hover:before {
+    background: whitesmoke;
 }
 
 section .title::after {
@@ -172,9 +177,10 @@ section .title::after {
     padding: 5px;
     background: url("images/background.jpeg") center;
     transform: translateX(-50%);
+    transition: all 0.3s ease;
 }
 
-section .title::after:hover {
+section .title:hover::after {
     color: whitesmoke;
 }
 
@@ -325,6 +331,10 @@ section .title::after:hover {
     transform: scale(1.05);
 }
 
+.skills .skills-content .right .bars:hover .info {
+    color: whitesmoke;
+}
+
 .skills .skills-content .right .line {
     height: 5px;
     width: 100%;
@@ -340,6 +350,10 @@ section .title::after:hover {
     top: 0;
     left: 0;
     background: #0054d3;
+}
+
+.skills .skills-content .right .bars:hover .line::before {
+    background: whitesmoke;
 }
 
 .skills .skills-content .right .java::before {
