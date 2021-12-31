@@ -36,7 +36,7 @@ html {
 
 .navbar.sticky {
     padding: 15px 0;
-    background: #0C0032;
+    background: #0a0029;
 }
 
 .navbar .logo a {
@@ -52,7 +52,7 @@ html {
 
 .navbar .menu li a {
     display: block;
-    color: #240090;
+    color: #0054d3;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -106,6 +106,7 @@ html {
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
+    color: #0054d3;
 }
 
 .home .home-content .text-3 {
@@ -143,7 +144,7 @@ section .title {
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
-    color: #240090;
+    color: #3500D3;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
@@ -173,7 +174,7 @@ section .title::after {
     bottom: -12px;
     left: 50%;
     font-size: 20px;
-    color: #190061;
+    color: #240090;
     padding: 5px;
     background: url("images/background.jpeg") center;
     transform: translateX(-50%);
@@ -210,7 +211,7 @@ section .title:hover::after {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
-    color: #240090;
+    color: #3500D3;
 }
 
 .about .about-content .right .text span {
@@ -219,7 +220,7 @@ section .title:hover::after {
 
 .about .about-content .right p {
     text-align: justify;
-    color: #240090;
+    color: #3500D3;
 }
 
 .about .about-content .right a {
@@ -250,7 +251,7 @@ section .title:hover::after {
 .education .education-content .card {
     height: 350px;
     width: calc(33% - 20px);
-    background: #0C0032;
+    background: #0a0029;
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
@@ -306,7 +307,7 @@ section .title:hover::after {
 .skills .skills-content .left p {
     font-size: 18px;
     font-weight: 500;
-    color: #240090;
+    color: #3500D3;
     text-align: justify;
 }
 
@@ -413,7 +414,7 @@ section .title:hover::after {
 
 .projects .carousel .card {
     height: 275px;
-    background: #0C0032;
+    background: #0a0029;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -462,7 +463,7 @@ section .title:hover::after {
 
 .cp .carousel .card {
     height: 250px;
-    background: #0C0032;
+    background: #0a0029;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
