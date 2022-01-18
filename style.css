@@ -239,6 +239,7 @@ section .title:hover::after {
 .about .about-content .right a:hover {
     background: #0054d3;
     color: whitesmoke;
+    transform: scale(1.05);
 }
 
 .about .about-content .column {
@@ -313,6 +314,7 @@ section .title:hover::after {
 
 .skills .skills-content .right .bars {
     margin-bottom: 15px;
+    transition: all 0.3s ease;
 }
 
 .skills .skills-content .right .info {
