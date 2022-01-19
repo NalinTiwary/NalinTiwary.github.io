@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&family=VT323&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -24,7 +24,7 @@ html {
     width: 100%;
     z-index: 999;
     padding: 30px 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'VT323', monospace;
     transition: all 0.3s ease;
 }
 
@@ -53,7 +53,7 @@ html {
 .navbar .menu li a {
     display: block;
     color: #0054d3;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
@@ -103,7 +103,8 @@ html {
 }
 
 .home .home-content .text-2 {
-    font-size: 75px;
+    font-family: 'VT323', monospace;
+    font-size: 90px;
     font-weight: 600;
     margin-left: -3px;
     color: #0054d3;
@@ -115,6 +116,8 @@ html {
 }
 
 .home .home-content .text-3 span {
+    font-size: 50px;
+    font-family: 'VT323', monospace;
     color: #0054d3;
     font-weight: 500;
 }
@@ -140,12 +143,12 @@ section {
 section .title {
     position: relative;
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
     color: #3500D3;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'VT323', monospace;
     transition: all 0.3s ease;
 }
 
@@ -173,7 +176,7 @@ section .title::after {
     position: absolute;
     bottom: -12px;
     left: 50%;
-    font-size: 20px;
+    font-size: 25px;
     color: #240090;
     padding: 5px;
     background: url("images/background.jpeg") center;
@@ -216,6 +219,8 @@ section .title:hover::after {
 
 .about .about-content .right .text span {
     color: #0054d3;
+    font-family: 'VT323', monospace;
+    font-size: 35px;
 }
 
 .about .about-content .right p {
@@ -227,7 +232,8 @@ section .title:hover::after {
     display: inline-block;
     color: #0054d3;
     background: none;
-    font-size: 20px;
+    font-family: 'VT323', monospace;
+    font-size: 25px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
@@ -282,8 +288,9 @@ section .title:hover::after {
 }
 
 .education .education-content .card .box .text {
+    font-family: 'VT323', monospace;
     color: #0054d3;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
@@ -326,8 +333,9 @@ section .title:hover::after {
 }
 
 .skills .skills-content .right span {
+    font-family: 'VT323', monospace;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 .skills .skills-content .right .bars:hover {
@@ -440,7 +448,8 @@ section .title:hover::after {
 }
 
 .projects .carousel .card .text {
-    font-size: 25px;
+    font-family: 'VT323', monospace;
+    font-size: 35px;
     font-weight: 500;
     margin: 10px 0 7px 0;
     color: #0054d3;
@@ -477,7 +486,8 @@ section .title:hover::after {
 }
 
 .cp .carousel .card .position {
-    font-size: 35px;
+    font-family: 'VT323', monospace;
+    font-size: 45px;
     font-weight: 700;
     object-fit: cover;
     color: #0054d3;
@@ -501,7 +511,8 @@ section .title:hover::after {
 }
 
 .cp .carousel .card .text {
-    font-size: 25px;
+    font-family: 'VT323', monospace;
+    font-size: 35px;
     font-weight: 500;
     margin: 10px 0 7px 0;
     color: #0054d3;
@@ -551,7 +562,8 @@ section .title:hover::after {
 }
 
 .profiles .profiles-content .card span {
-    font-size: 15px;
+    font-family: 'VT323', monospace;
+    font-size: 22px;
     font-weight: 500;
     color: #0054d3;
 }
